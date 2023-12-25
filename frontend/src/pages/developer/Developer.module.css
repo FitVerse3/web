@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: url(../../assets/bg_img/bg_star.png);
+}
+.txt_container{
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 100px;
+    font-family: Permanent Marker;
+}
+.home_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #15e935;
+}
+.profile_card {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  background-color:transparent;
+  padding: 30px;
+  border-radius: 50%;
+  box-shadow: -5px 8px 45px rgb(255, 255, 255);
+  transition: all 0.4s;
+  margin: 0 20px;
+}
+.profile_card:hover {
+  border-radius: 10px;
+  height: 260px;
+}
+.profile_card .img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.profile_card:hover img {
+  border-radius: 10px;
+  transform: translateY(-70px);
+}
+.img img {
+  object-fit: fill;
+  width: 100%;
+  border-radius: 50%;
+  transition: all 0.4s;
+  z-index: 99;
+}
+.caption {
+  text-align: center;
+  transform: translateY(-90px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+}
+.profile_card:hover .caption {
+  opacity: 1;
+  pointer-events: all;
+}
+.caption h3 {
+  font-size: 21px;
+  color: #f6f6f6;
+  font-weight: 600;
+}
+.caption p {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 2px 0 12px 0;
+  color: #a70a24;
+}
+.caption .social_links i {
+  font-size: 21px;
+  margin: 0 3px;
+  cursor: pointer;
+  color: #15e935;
+  transition: all 0.4s;
+}
+.caption .social_links i:hover {
+  color: #ffffff;
+}
+
